@@ -15,3 +15,11 @@ export interface ContactData {
         message: string;
     }
 }
+
+export interface FrameLetCode {
+
+    firstName: string,
+    lastName: string,
+    email: string
+
+}

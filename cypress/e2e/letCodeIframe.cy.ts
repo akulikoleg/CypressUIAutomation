@@ -1,4 +1,5 @@
 import { framePage }  from "../../pageObject/index";
+import {FrameLetCode} from "../../interface/interface";
 
 
 describe('Letcode IFrame', () => {
@@ -11,16 +12,21 @@ describe('Letcode IFrame', () => {
         framePage.open();
     })
 
-    it.only('iframe option 1', () => {
+    it('iframe option 1', () => {
 
-        framePage.getFirstIFrame().then( (iframe: JQuery) => {
+        cy.fixture("frameLetCode.json").then((obj) => {
 
-            framePage.firstNameInput(iframe, fname);
-            framePage.lastNameInput(iframe, lname);
-            framePage.checkParagraph(iframe, fname, lname);
-            framePage.checkEmailInput(iframe, email)
+            framePage.getFirstIFrame().then( (iframe: JQuery) => {
+
+                framePage.firstNameInput(iframe, obj.firstName);
+                framePage.lastNameInput(iframe, obj.lastName);
+                framePage.checkParagraph(iframe, obj.firstName, obj.lastName);
+                framePage.checkEmailInput(iframe, obj.email)
+
+            })
 
         })
+
 
     });
 
@@ -72,21 +78,29 @@ describe('Letcode IFrame', () => {
 
     });
 
-    it("iframe using custom command", () => {
+    it.only("iframe using custom command", function(){
 
-         cy.getIframeBody("#firstFr").as('getIframe');
-         cy.get("@getIframe")
-            .find('[name="fname"]').type(fname);
-         cy.get("@getIframe")
-            .find('[name="lname"]').type(lname);
-         cy.get("@getIframe")
-            .find('p').should('contain', 'You have entered ' + fname + ' ' + lname);
-        cy.getIframeBody("#firstFr").find("[src=\"innerFrame\"]").then( (innerFrame: JQuery) => {
-            const innerbody =   innerFrame.contents().find('body');
-            cy.wrap(innerbody).find('input[name="email"]')
-                .type(email)
-                .should('have.value', email);
+        cy.fixture("frameLetCode.json").then( (inpData: FrameLetCode) =>  {
+            if(inpData){
+                cy.getIframeBody("#firstFr").as('getIframe');
+                cy.get("@getIframe")
+                    .find('[name="fname"]').type(inpData.firstName);
+                cy.get("@getIframe")
+                    .find('[name="lname"]').type(inpData.lastName);
+                cy.get("@getIframe")
+                    .find('p').should('contain', 'You have entered ' + inpData.firstName + ' ' + inpData.lastName);
+                cy.getIframeBody("#firstFr").find("[src=\"innerFrame\"]").then( (innerFrame: JQuery) => {
+                    const innerbody =   innerFrame.contents().find('body');
+                    cy.wrap(innerbody).find('input[name="email"]')
+                        .type(inpData.email)
+                        .should('have.value', inpData.email);
+                })
+            }
+
         })
+
+
+
     })
 
 });
