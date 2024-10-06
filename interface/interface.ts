@@ -23,3 +23,21 @@ export interface FrameLetCode {
     email: string
 
 }
+
+export interface TextBoxData {
+    validData: {
+        fullName: string,
+        email: string,
+        currentAddress?: string,
+        permanentAddress: string
+    },
+    unvalidEmailData: {
+        fullName: string,
+        email: string,
+        currentAddress?: string,
+        permanentAddress?: string
+
+    }
+
+
+}
