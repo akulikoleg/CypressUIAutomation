@@ -1,0 +1,14 @@
+{
+  "validData": {
+    "fullName": "Derek Vischeg",
+    "email": "derek@gmail.com",
+    "currentAddress": "350 LONE STAR DR, GREENVILLE SC 29355",
+    "permanentAddress": "123 newberry ave, Newark NJ 33333"
+  },
+  "unvalidEmailData" : {
+    "fullName": "Derek Vischeg",
+    "email": "derekgmail.com"
+
+  }
+
+}
