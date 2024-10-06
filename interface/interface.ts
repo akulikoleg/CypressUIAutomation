@@ -38,6 +38,22 @@ export interface TextBoxData {
         permanentAddress?: string
 
     }
+}
 
-
+export interface ClientData {
+    firstName: string;
+    lastName: string;
+    email: string;
+    gender : string;
+    phone : string;
+    dateOfBirth : string;
+    subject: string;
+    hobbies: {
+        sports: boolean,
+        readings: boolean,
+        music: boolean
+    },
+    currentAddress: string;
+    state: string;
+    city: string;
 }
