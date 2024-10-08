@@ -26,7 +26,6 @@ export class PracticeForm{
                     if( obj['hobbies'][text]  )
                         cy.wrap(el).eq(i).click();
                 }
-
             })
             cy.get('#uploadPicture').selectFile('cypress/filesToUpload/photoUpl.jpg');
             cy.get("#currentAddress").type(obj.currentAddress);
