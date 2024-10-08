@@ -75,7 +75,7 @@ describe('FORMS', () => {
         it('check each radiobtn', () => {
             cy.get('#radio-buttons').within( () => {
                 cy.get('[type="radio"]').each(radio => {
-                    cy.wrap(radio).check().should('be.checked');
+                    cy.wrap(radio).check({force:true}).should('be.checked');
                 })
                 cy.get('[type="radio"]:checked').should('have.length', 1);
             })

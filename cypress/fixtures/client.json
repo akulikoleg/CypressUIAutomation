@@ -1,0 +1,18 @@
+{
+  "firstName" : "Bruce",
+  "lastName": "Wiliamington",
+  "email": "brice@gmail.com",
+  "gender" : "Male",
+  "phone" : "9466569911",
+  "dateOfBirth" : "02-02-1990",
+  "subject": "self_employed",
+  "hobbies": {
+    "Sports": true,
+    "Reading": true,
+    "Music": false
+  },
+  "currentAddress": "123 chesnee dr",
+  "state": "Rajasthan",
+  "city":"Jaiselmer"
+
+}

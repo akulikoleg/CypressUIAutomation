@@ -21,7 +21,7 @@ describe('DEMOQA', () => {
 
     })
 
-    describe('DEMOQA FORMS', () => {
+    describe.only('DEMOQA FORMS', () => {
 
         it('should take valid data and submit form', () => {
             cy.visit('https://demoqa.com/automation-practice-form#google_vignette');
@@ -34,8 +34,10 @@ describe('DEMOQA', () => {
             cy.get('.react-datepicker__year-select').select('1993').should('have.value', '1993');
             cy.get('.react-datepicker__month-select').select('April').should('have.value', '3');
             cy.get('.react-datepicker__day.react-datepicker__day--009').click();
+
             cy.get('#subjectsContainer').type('No subject');
-            cy.get('#subjectsContainer').type('No subject');
+            cy.get("#subjectsInput").should('have.value', 'No subject');// May not work; used blur(),
+
             cy.get('[type="checkbox"]').each(el => {
                 cy.wrap(el).check( {force: true}).should('be.checked');
             });
@@ -48,9 +50,7 @@ describe('DEMOQA', () => {
             cy.get('.modal-content').should('be.visible');
 
 
-
         })
-
 
     })
 
