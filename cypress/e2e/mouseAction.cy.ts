@@ -14,7 +14,7 @@ describe('MouseAction', () => {
         cy.get("#droppable").should('have.css', "background-color", "rgb(97, 109, 179)");
 
        // cy.get("//div[@id=\"draggable\"]")  |
-        cy.get("#draggable").trigger('mousedown', {which:0})
+        cy.get("#draggable").trigger('mousedown', {which:1})
         cy.get("#droppable").trigger('mousemove').trigger('mouseup', {force:true});
 
         cy.get("#droppable").invoke('text').invoke('trim').should('eq', "Dropped!");
@@ -35,7 +35,7 @@ describe('MouseAction', () => {
     });
 
     it('should able to hold click', () => {
-        cy.get("#click-box").trigger('mousedown', {which:1}) // the same like {button:1}
+        cy.get("#click-box").trigger('mousedown', {button:1}) // the same like {button:1}
             .then( element => {
                 expect(element).to.have.css("background-color", "rgb(0, 255, 0)");
             })

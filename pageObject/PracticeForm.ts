@@ -10,6 +10,7 @@ export class PracticeForm{
             cy.get("#userEmail").type(obj.email);
             let gender;
             switch( obj.gender.toLowerCase() ){
+
                 case "male": gender = 0; break;
                 case "female": gender = 1; break;
                 case "other": gender = 2; break;

@@ -7,5 +7,10 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    env:{
+      username: 'oaculov@gmail.com',
+      password: '029721275hH',
+      pasvProd: "https://coding.pasv.us"
+    }
   },
 });
