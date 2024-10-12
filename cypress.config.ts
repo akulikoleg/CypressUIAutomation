@@ -8,7 +8,7 @@ export default defineConfig({
       // implement node event listeners here
     },
     env:{
-      username: 'oaculov@gmail.com',
+      email: 'oaculov@gmail.com',
       password: '029721275hH',
       pasvProd: "https://coding.pasv.us"
     }

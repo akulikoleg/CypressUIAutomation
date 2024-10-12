@@ -25,7 +25,7 @@ describe('Intercept', () => {
 
 
         cy.visit(`${Cypress.env('pasvProd')}/user/login`);
-        cy.get('[id="normal_login_email"]').type(Cypress.env('username'));
+        cy.get('[id="normal_login_email"]').type(Cypress.env('email'));
         cy.get('[id="normal_login_password"]').type(Cypress.env('password'), {log: false});
         cy.get('button[type="submit"]').click();
 

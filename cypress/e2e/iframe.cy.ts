@@ -15,7 +15,7 @@ describe('IFRAME', () => {
             //     .click();
 
 
-            cy.get('[id="frame"]').then((iframe) => {
+            cy.get('iframe').then((iframe) => {
                 const body = iframe.contents().find("body")
                 cy.wrap(body).find('[id="button-find-out-more"]').click();
 
