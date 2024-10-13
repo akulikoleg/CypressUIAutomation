@@ -1,0 +1,133 @@
+{
+  "message": "Get courses progress",
+  "success": true,
+  "fail": false,
+  "payload": [
+    {
+      "_id": "65e78ef1d31a7a724ec310a9",
+      "completedLessons": 0,
+      "totalLessons": 141,
+      "course": {
+        "_id": "635c05ba659f6d77abf1f4e7",
+        "name": "JavaScript Syntax "
+      }
+    },
+    {
+      "_id": "65ff90831208bbeb9e513327",
+      "completedLessons": 0,
+      "totalLessons": 115,
+      "course": {
+        "_id": "5ff2005cacc2d5003ae26bc7",
+        "name": "QA Manual"
+      }
+    },
+    {
+      "_id": "66116bec518c0fed98e73396",
+      "completedLessons": 0,
+      "totalLessons": 17,
+      "course": {
+        "_id": "5f449251891af4003c44e957",
+        "name": "HTML, CSS Syntax"
+      }
+    },
+    {
+      "_id": "662c17825e86fd86ea659342",
+      "completedLessons": 0,
+      "totalLessons": 14,
+      "course": {
+        "_id": "5f70329bbed3ac003cb1b06c",
+        "name": "Git and GitHub"
+      }
+    },
+    {
+      "_id": "6634345717bddc71413c7609",
+      "completedLessons": 0,
+      "totalLessons": 33,
+      "course": {
+        "_id": "6257846e1224311e20f842e9",
+        "name": "JS2 Module"
+      }
+    },
+    {
+      "_id": "66343ebb17bddc71413ca41f",
+      "completedLessons": 0,
+      "totalLessons": 7,
+      "course": {
+        "_id": "63fcf9dbc8dc3fbc269c32c9",
+        "name": "QA Manual Practice"
+      }
+    },
+    {
+      "_id": "66343ff017bddc71413ca9e8",
+      "completedLessons": 0,
+      "totalLessons": 4,
+      "course": {
+        "_id": "62d182a3f64df852198549f8",
+        "name": "API Testing for QA"
+      }
+    },
+    {
+      "_id": "6642cc2f3bc9cc95b4bd083f",
+      "completedLessons": 0,
+      "totalLessons": 66,
+      "course": {
+        "_id": "5fcc749061045d003aa18fba",
+        "name": "React JS"
+      }
+    },
+    {
+      "_id": "6642ccee3bc9cc95b4bd0df2",
+      "completedLessons": 0,
+      "totalLessons": 14,
+      "course": {
+        "_id": "6328727967177736dffed1fb",
+        "name": "SQL"
+      }
+    },
+    {
+      "_id": "664c034b098ed7843092ee74",
+      "completedLessons": 0,
+      "totalLessons": 32,
+      "course": {
+        "_id": "65c688b358695cd5cb88bc31",
+        "name": "UI/UX Дизайн"
+      }
+    },
+    {
+      "_id": "66553e89e9d599d3a866d28b",
+      "completedLessons": 0,
+      "totalLessons": 5,
+      "course": {
+        "_id": "5d1cbad8086fc30038bf1856",
+        "name": "QA Basics"
+      }
+    },
+    {
+      "_id": "66553eefe9d599d3a866d385",
+      "completedLessons": 0,
+      "totalLessons": 30,
+      "course": {
+        "_id": "6578be20627e61b252066a71",
+        "name": "TypeScript"
+      }
+    },
+    {
+      "_id": "665883b5d30cca01f03dae98",
+      "completedLessons": 0,
+      "totalLessons": 49,
+      "course": {
+        "_id": "5f533d699a51f5003cb0fcab",
+        "name": "Express JS"
+      }
+    },
+    {
+      "_id": "66588432d30cca01f03db0c9",
+      "completedLessons": 0,
+      "totalLessons": 112,
+      "course": {
+        "_id": "5d1cbf67086fc30038bf1859",
+        "name": "JavaScript Practice"
+      }
+    }
+  ]
+}
